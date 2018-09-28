@@ -1,7 +1,7 @@
 module.exports = function solveEquation(equation) 
 {
 
-  var arr = equation.split(' ');
+ var arr = equation.replace(/\s/g, '').match(/(\+|\-|\d)\d{1,}/g);
 
  var a = arr[0];
  var b = arr[1];
